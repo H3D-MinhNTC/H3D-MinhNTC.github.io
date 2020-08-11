@@ -1,6 +1,9 @@
 let isSafari = window.safari !== undefined;
-alert(isSafari);
-if (isSafari) {
+let isSafariNavigator = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+    navigator.userAgent &&
+    navigator.userAgent.indexOf('CriOS') === -1 &&
+    navigator.userAgent.indexOf('FxiOS') === -1;
+if (isSafari || isSafariNavigator) {
     let doc = document.documentElement;
     let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
     if (top <= 200) {
