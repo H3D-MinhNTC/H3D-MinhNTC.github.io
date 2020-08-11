@@ -16,6 +16,5 @@ window.onload = function () {
         //         window.scrollTo(0, top);
         //     }, 1000);
         // }
-        document.getElementById('header').style.display = 'block';
     }
 }
