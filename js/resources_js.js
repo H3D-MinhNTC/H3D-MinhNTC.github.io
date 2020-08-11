@@ -13,6 +13,6 @@ if (isSafari || isSafariNavigator) {
         });
         setTimeout(function () {
             window.scrollTo(0, top);
-        }, 300);
+        }, 1000);
     }
 }
